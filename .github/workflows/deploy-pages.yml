@@ -36,6 +36,7 @@ jobs:
           mkdir pages
           cd pages
           echo "Hello world" >> example2.txt
+          echo ${{ github.ref }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
